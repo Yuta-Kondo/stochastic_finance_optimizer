@@ -86,8 +86,11 @@ The package includes comprehensive visualization tools:
 - Rolling volatility charts
 - Performance attribution analysis
 
-Example output:
-![Portfolio Analysis](docs/images/portfolio_analysis.png)
+Running the example script will generate four plots:
+1. Optimal portfolio weights for each currency pair
+2. Cumulative returns over time
+3. Correlation matrix between currency pairs
+4. 30-day rolling volatility for each pair
 
 ## Mathematical Foundation
 
@@ -130,16 +133,4 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Author
-
-[Your Name]
-- LinkedIn: [Your LinkedIn Profile]
-- Email: [Your Email]
-
-## Acknowledgments
-
-- Modern Portfolio Theory by Harry Markowitz
-- Stochastic Optimization techniques in Finance
-- Python Scientific Computing Stack 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
