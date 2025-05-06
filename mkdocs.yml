@@ -1,0 +1,58 @@
+site_name: Stochastic Finance Optimizer
+site_description: A sophisticated Python implementation of stochastic optimization techniques for financial portfolio management
+site_author: Your Name
+repo_url: https://github.com/yourusername/stochastic_finance_optimizer
+repo_name: stochastic_finance_optimizer
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - mathjax:
+      enable_dollar_delimiter: true
+
+nav:
+  - Home: index.md
+  - Documentation:
+    - Installation: docs/installation.md
+    - Usage: docs/usage.md
+    - API Reference: docs/api.md
+  - Technical Report: docs/technical_report.md
+  - Examples:
+    - Portfolio Optimization: docs/examples/portfolio_optimization.md
+  - Contributing: docs/contributing.md 
