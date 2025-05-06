@@ -42,19 +42,19 @@ returns, risk = model.calculate_portfolio_metrics(optimal_weights)
 The optimization process is based on modern portfolio theory with several enhancements:
 
 1. **Objective Function**:
-   $$ \max_w \frac{R_p - R_f}{\sigma_p} $$
+   \[ \max_w \frac{R_p - R_f}{\sigma_p} \]
    where:
-   - $R_p$ is the portfolio return
-   - $R_f$ is the risk-free rate
-   - $\sigma_p$ is the portfolio volatility
+   - \(R_p\) is the portfolio return
+   - \(R_f\) is the risk-free rate
+   - \(\sigma_p\) is the portfolio volatility
 
 2. **Constraints**:
-   $$ \sum_{i=1}^n w_i = 1 $$
-   $$ w_i \geq 0 \quad \forall i $$
+   \[ \sum_{i=1}^n w_i = 1 \]
+   \[ w_i \geq 0 \quad \forall i \]
 
 3. **Risk Calculation**:
-   $$ \sigma_p = \sqrt{w^T \Sigma w} $$
-   where $\Sigma$ is the covariance matrix
+   \[ \sigma_p = \sqrt{w^T \Sigma w} \]
+   where \(\Sigma\) is the covariance matrix
 
 ## Installation
 
@@ -74,6 +74,7 @@ For detailed documentation, please visit:
 - [API Reference](api.md)
 - [Technical Report](technical_report.md)
 - [Examples](examples/portfolio_optimization.md)
+- [Contributing Guide](contributing.md)
 
 ## Contributing
 
