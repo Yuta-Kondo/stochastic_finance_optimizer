@@ -31,10 +31,6 @@ theme:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
-      block_tag: 'div'
-      inline_tag: 'span'
-      block_class: 'arithmatex'
-      inline_class: 'arithmatex'
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.inlinehilite
