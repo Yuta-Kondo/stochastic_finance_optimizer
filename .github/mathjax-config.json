@@ -1,0 +1,18 @@
+{
+  "mathjax": {
+    "config": {
+      "TeX": {
+        "Macros": {
+          "RR": "\\mathbb{R}",
+          "NN": "\\mathbb{N}",
+          "ZZ": "\\mathbb{Z}",
+          "CC": "\\mathbb{C}",
+          "EE": "\\mathbb{E}",
+          "Var": "\\mathrm{Var}",
+          "Cov": "\\mathrm{Cov}",
+          "Corr": "\\mathrm{Corr}"
+        }
+      }
+    }
+  }
+} 

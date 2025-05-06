@@ -1,6 +1,11 @@
 # Stochastic Optimization in Financial Portfolio Management
 ## A Technical Implementation Report
 
+<!-- MathJax Configuration -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 ### Abstract
 
 This report presents a comprehensive implementation of stochastic optimization techniques for financial portfolio management. The implementation focuses on both traditional asset classes and Forex markets, demonstrating the versatility of stochastic gradient descent (SGD) in solving complex portfolio optimization problems. The results show significant improvements in risk-adjusted returns compared to traditional optimization methods.
@@ -91,22 +96,22 @@ The optimal portfolio weights demonstrate effective diversification:
 
 The gradient of the Sharpe ratio is computed as:
 
-\[ \nabla_w SR = \frac{1}{\sigma_p} \left(\nabla_w R_p - SR \cdot \nabla_w \sigma_p\right) \]
+$$ \nabla_w SR = \frac{1}{\sigma_p} \left(\nabla_w R_p - SR \cdot \nabla_w \sigma_p\right) $$
 
 where:
-- \(R_p\) is the portfolio return
-- \(\sigma_p\) is the portfolio volatility
-- \(SR\) is the current Sharpe ratio
+- $R_p$ is the portfolio return
+- $\sigma_p$ is the portfolio volatility
+- $SR$ is the current Sharpe ratio
 
 #### 4.2 Constraint Handling
 
 Portfolio constraints are enforced through projection:
 
 1. Non-negativity constraint:
-   \[ w_i \geq 0 \quad \forall i \]
+   $$ w_i \geq 0 \quad \forall i $$
 
 2. Full investment constraint:
-   \[ \sum_{i=1}^n w_i = 1 \]
+   $$ \sum_{i=1}^n w_i = 1 $$
 
 #### 4.3 Performance Optimization
 
