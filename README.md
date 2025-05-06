@@ -97,19 +97,30 @@ Running the example script will generate four plots:
 The optimization process is based on modern portfolio theory with several enhancements:
 
 1. **Objective Function**:
-   \[ \max_w \frac{R_p - R_f}{\sigma_p} \]
+   $$ \max_w \frac{R_p - R_f}{\sigma_p} $$
    where:
-   - \(R_p\) is the portfolio return
-   - \(R_f\) is the risk-free rate
-   - \(σ_p\) is the portfolio volatility
+   - $R_p$ is the portfolio return
+   - $R_f$ is the risk-free rate
+   - $\sigma_p$ is the portfolio volatility
 
 2. **Constraints**:
-   \[ \sum_{i=1}^n w_i = 1 \]
-   \[ w_i \geq 0 \quad \forall i \]
+   $$ \sum_{i=1}^n w_i = 1 $$
+   $$ w_i \geq 0 \quad \forall i $$
 
 3. **Risk Calculation**:
-   \[ \sigma_p = \sqrt{w^T \Sigma w} \]
-   where Σ is the covariance matrix
+   $$ \sigma_p = \sqrt{w^T \Sigma w} $$
+   where $\Sigma$ is the covariance matrix
+
+4. **Gradient of Sharpe Ratio**:
+   $$ \nabla_w SR = \frac{1}{\sigma_p} \left(\nabla_w R_p - SR \cdot \nabla_w \sigma_p\right) $$
+
+5. **Portfolio Return**:
+   $$ R_p = \sum_{i=1}^n w_i R_i $$
+   where $R_i$ is the return of asset $i$
+
+6. **Portfolio Variance**:
+   $$ \sigma_p^2 = w^T \Sigma w = \sum_{i=1}^n \sum_{j=1}^n w_i w_j \sigma_{ij} $$
+   where $\sigma_{ij}$ is the covariance between assets $i$ and $j$
 
 ## Project Structure
 
