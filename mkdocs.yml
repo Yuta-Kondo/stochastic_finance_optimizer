@@ -31,6 +31,10 @@ theme:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+      block_tag: 'div'
+      inline_tag: 'span'
+      block_class: 'arithmatex'
+      inline_class: 'arithmatex'
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.inlinehilite
@@ -41,6 +45,16 @@ markdown_extensions:
   - meta
   - toc:
       permalink: true
+
+extra:
+  math:
+    mathjax:
+      enable: true
+      config:
+        tex2jax:
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        processEscapes: true
 
 plugins:
   - search
