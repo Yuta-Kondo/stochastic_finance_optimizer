@@ -1,7 +1,7 @@
 site_name: Stochastic Finance Optimizer
 site_description: A sophisticated Python implementation of stochastic optimization techniques for financial portfolio management
-site_author: Your Name
-repo_url: https://github.com/yourusername/stochastic_finance_optimizer
+site_author: Yuta Kondo
+repo_url: https://github.com/Yuta-Kondo/stochastic_finance_optimizer
 repo_name: stochastic_finance_optimizer
 
 theme:

@@ -59,7 +59,7 @@ The optimization process is based on modern portfolio theory with several enhanc
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/stochastic_finance_optimizer.git
+git clone https://github.com/Yuta-Kondo/stochastic_finance_optimizer.git
 cd stochastic_finance_optimizer
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
